@@ -1,0 +1,297 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 06, 2023 at 08:00 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `inventory_products`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exportings`
+--
+
+CREATE TABLE `exportings` (
+  `Record_ID` int(11) NOT NULL,
+  `Date` date NOT NULL,
+  `Barcode` bigint(11) NOT NULL,
+  `Name` varchar(111) NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `Price` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `items`
+--
+
+CREATE TABLE `items` (
+  `Id_No` int(11) NOT NULL,
+  `Barcode` bigint(100) NOT NULL,
+  `Name` varchar(150) NOT NULL,
+  `Category` varchar(150) NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `Unit_Price` float NOT NULL,
+  `Status` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `items`
+--
+
+INSERT INTO `items` (`Id_No`, `Barcode`, `Name`, `Category`, `Quantity`, `Unit_Price`, `Status`) VALUES
+(10, 4567213123445, 'Mauntain Dew', 'Drink', 100, 213.7, 'Available'),
+(14, 123123, 'Rc Cola', 'Drink', 13, 200.12, 'Available'),
+(15, 89012312121234, 'Chessy', 'Snack', 200, 100.12, 'Available'),
+(16, 345623418908123, 'Lucky Me', 'Food', 100, 63.45, 'Available'),
+(17, 68758759879, 'Biogesic', 'Medicine', 88, 80.12, 'Available');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `record_outofstock`
+--
+
+CREATE TABLE `record_outofstock` (
+  `Record_ID` int(11) NOT NULL,
+  `Staff_Name` varchar(200) NOT NULL,
+  `Date` date NOT NULL,
+  `Time` time NOT NULL,
+  `Barcode` bigint(20) NOT NULL,
+  `Name` varchar(200) NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `Price` double(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `record_outofstock`
+--
+
+INSERT INTO `record_outofstock` (`Record_ID`, `Staff_Name`, `Date`, `Time`, `Barcode`, `Name`, `Quantity`, `Price`) VALUES
+(49, '', '2022-12-23', '00:00:00', 4567, 'Mauntain Dew', 2, 427),
+(50, '', '2022-12-23', '00:00:00', 4567, 'Mauntain Dew', 5, 1069),
+(51, '', '2022-12-23', '00:00:00', 4567, 'Mauntain Dew', 1, 214),
+(52, '', '2022-12-22', '00:00:00', 4567, 'Mauntain Dew', 2, 427),
+(53, '', '2022-11-23', '00:00:00', 4567, 'Mauntain Dew', 2, 427),
+(54, '', '2022-12-01', '00:00:00', 4567, 'Mauntain Dew', 10, 2137),
+(55, '', '2022-12-25', '00:00:00', 4567, 'Mauntain Dew', 5, 1068),
+(56, '', '2022-12-25', '00:00:00', 2222222222, 'c2', 5, 615615),
+(57, '', '2022-12-25', '00:00:00', 123123, 'chicken', 5, 61665),
+(58, '', '2022-12-24', '00:00:00', 4567, 'Mauntain Dew', 3, 641),
+(59, '', '2022-12-24', '00:00:00', 123123, 'chicken', 3, 36999),
+(60, '', '2022-12-24', '00:00:00', 2222222222, 'c2', 3, 369369),
+(61, '', '2022-12-26', '00:00:00', 123123, 'chicken', 3, 36999),
+(62, '', '2022-12-26', '00:00:00', 123123, 'chicken', 3, 36999),
+(63, '', '2022-12-26', '00:00:00', 123123, 'chicken', 3, 36999),
+(64, '', '2023-01-01', '00:00:00', 123123, 'chicken', 2, 24666),
+(65, '', '2023-01-01', '00:00:00', 123123, 'chicken', 2, 24666),
+(66, '', '2023-01-01', '00:00:00', 123123, 'chicken', 2, 24666),
+(67, '', '2023-01-01', '00:00:00', 123123, 'chicken', 2, 24666),
+(68, '', '2022-12-25', '00:00:00', 4567, 'Mauntain Dew', 100, 21370),
+(69, '', '2022-12-25', '00:00:00', 4567, 'Mauntain Dew', 33, 7052),
+(70, '', '2022-12-25', '00:00:00', 4567, 'Mauntain Dew', 2, 427),
+(71, '', '2022-12-25', '00:00:00', 4567, 'Mauntain Dew', 0, 0),
+(72, '', '2022-12-25', '00:00:00', 4567, 'Mauntain Dew', 9, 1923),
+(73, '', '2022-12-29', '00:00:00', 123123, 'chicken', 12, 147996),
+(74, '', '2022-12-29', '00:00:00', 2222222222, 'c2', 12, 1477476),
+(76, '', '2022-12-30', '00:00:00', 2222222222, 'c2', 11, 1354353),
+(77, '', '2022-12-30', '00:00:00', 123123, 'chicken', 11, 135663),
+(78, '', '2022-12-31', '00:00:00', 123123, 'chicken', 12, 147996),
+(79, '', '2022-12-31', '00:00:00', 2222222222, 'c2', 23, 2831829),
+(80, '', '2022-12-31', '00:00:00', 123123, 'chicken', 1212, 14947596),
+(81, '', '2023-01-01', '00:00:00', 12333333, 'MAGBAGOKA', 123, 1514388),
+(82, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 1233, 15180819),
+(83, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 123, 1514388),
+(84, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 1223, 15057698),
+(85, ' ', '2023-01-03', '00:00:00', 123123, 'TANGINA', 123, 1516959),
+(86, ' ', '2023-01-03', '00:00:00', 2222222222, 'PAKYUKA', 123, 15144129),
+(87, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 123, 1514388),
+(88, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 1233, 15180819),
+(89, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 123, 1514388),
+(90, ' ', '2023-01-03', '00:00:00', 2222222222, 'PAKYUKA', 123, 15144129),
+(91, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 123, 1514388),
+(92, ' ', '2023-01-03', '00:00:00', 123123, 'TANGINA', 11, 135663),
+(93, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 123, 1514388),
+(94, ' ', '2023-01-03', '00:00:00', 2222222222, 'PAKYUKA', 1231, 151564413),
+(95, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 14, 172369),
+(96, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 60317, 742628936),
+(97, ' ', '2023-01-03', '00:00:00', 12333333, 'MAGBAGOKA', 111, 1366643),
+(98, ' ', '2023-01-04', '00:00:00', 2222222222, 'PAKYUKA', 123, 15144129),
+(99, ' ', '2023-01-04', '00:00:00', 12333333, 'MAGBAGOKA', 11, 135433),
+(100, ' Diana Panti', '2023-01-04', '00:00:00', 12333333, 'MAGBAGOKA', 11, 135433),
+(101, ' Diana Panti', '2023-01-04', '00:00:00', 2222222222, 'PAKYUKA', 12, 1477476),
+(102, ' Diana Panti', '2023-01-04', '00:00:00', 123123, 'TANGINA', 10652, 131371116),
+(103, ' Jerick aeron Ching', '2023-01-05', '00:00:00', 4567, 'Mauntain Dew', 1223, 261355),
+(104, ' Jerick aeron Ching', '2023-01-05', '09:23:59', 12333333, 'MAGBAGOKA', 12, 147745),
+(105, ' Jerick aeron Ching', '2023-01-05', '10:10:47', 123123, 'TANGINA', 12, 147996),
+(106, ' Jerick aeron Ching', '2023-01-05', '10:12:29', 2222222222, 'PAKYUKA', 12, 1477476),
+(107, ' Jerick aeron Ching', '2023-01-05', '10:13:31', 12333333, 'MAGBAGOKA', 22, 270866),
+(108, ' Jerick Ching', '2023-01-06', '02:24:18', 68758759879, 'Biogesic', 12, 961);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stockin_amount`
+--
+
+CREATE TABLE `stockin_amount` (
+  `id` int(11) NOT NULL,
+  `StockIn_Date` date NOT NULL,
+  `Total_Amount` decimal(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stockin_amount`
+--
+
+INSERT INTO `stockin_amount` (`id`, `StockIn_Date`, `Total_Amount`) VALUES
+(1, '2022-12-30', '999999'),
+(4, '2023-01-03', '123'),
+(5, '2023-01-05', '20000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stockin_product`
+--
+
+CREATE TABLE `stockin_product` (
+  `Id` int(11) NOT NULL,
+  `Staff_Name` varchar(255) NOT NULL,
+  `StockIn_Date` date NOT NULL,
+  `Time` time NOT NULL,
+  `Barcode` bigint(20) NOT NULL,
+  `Name` varchar(200) NOT NULL,
+  `Category` varchar(200) NOT NULL,
+  `Quantity` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stockin_product`
+--
+
+INSERT INTO `stockin_product` (`Id`, `Staff_Name`, `StockIn_Date`, `Time`, `Barcode`, `Name`, `Category`, `Quantity`) VALUES
+(18, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 18),
+(20, '', '2022-12-30', '00:00:00', 123123, 'chicken', 'Canned/Jarred Goods', 11),
+(24, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(25, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(26, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(27, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(28, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(29, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(31, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(32, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(33, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(34, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(35, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(36, '', '2022-12-30', '00:00:00', 4567, 'Mauntain Dew', 'Beverages', 12),
+(54, ' Jerick aeron Ching', '2023-01-05', '09:56:52', 2222222222, 'PAKYUKA', 'UMALISKAKAMALASAN', 20),
+(55, ' Jerick aeron Ching', '2023-01-05', '09:56:52', 2222222222, 'PAKYUKA', 'UMALISKAKAMALASAN', 20),
+(56, ' Jerick aeron Ching', '2023-01-05', '09:56:58', 12333333, 'MAGBAGOKA', 'PAKYU', 12),
+(57, ' Jerick aeron Ching', '2023-01-05', '09:56:58', 12333333, 'MAGBAGOKA', 'PAKYU', 12);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trashbin_items`
+--
+
+CREATE TABLE `trashbin_items` (
+  `Id_No` int(11) NOT NULL,
+  `Barcode` bigint(11) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Category` varchar(100) NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `Price` float NOT NULL,
+  `Status` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `items`
+--
+ALTER TABLE `items`
+  ADD PRIMARY KEY (`Id_No`);
+
+--
+-- Indexes for table `record_outofstock`
+--
+ALTER TABLE `record_outofstock`
+  ADD PRIMARY KEY (`Record_ID`);
+
+--
+-- Indexes for table `stockin_amount`
+--
+ALTER TABLE `stockin_amount`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `StockIn_Date` (`StockIn_Date`);
+
+--
+-- Indexes for table `stockin_product`
+--
+ALTER TABLE `stockin_product`
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `StockIn_Date` (`StockIn_Date`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `items`
+--
+ALTER TABLE `items`
+  MODIFY `Id_No` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `record_outofstock`
+--
+ALTER TABLE `record_outofstock`
+  MODIFY `Record_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+
+--
+-- AUTO_INCREMENT for table `stockin_amount`
+--
+ALTER TABLE `stockin_amount`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `stockin_product`
+--
+ALTER TABLE `stockin_product`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `stockin_product`
+--
+ALTER TABLE `stockin_product`
+  ADD CONSTRAINT `stockin_product_ibfk_1` FOREIGN KEY (`StockIn_Date`) REFERENCES `stockin_amount` (`StockIn_Date`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

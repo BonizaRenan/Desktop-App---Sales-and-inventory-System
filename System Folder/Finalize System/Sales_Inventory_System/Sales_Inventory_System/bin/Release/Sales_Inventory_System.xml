@@ -1,0 +1,1424 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sales_Inventory_System</name>
+    </assembly>
+    <members>
+        <member name="F:Sales_Inventory_System.Admin_Account.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Account.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Account.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Admin_Dashboard.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Dashboard.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Dashboard.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Admin_Inventory.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Inventory.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Inventory.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Admin_Sales.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Sales.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Sales.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Admin_Transaction.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Transaction.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Admin_Transaction.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Dashboard_Admin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Dashboard_Admin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Dashboard_Admin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Dashboard_Staff.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Dashboard_Staff.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Dashboard_Staff.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Sales_Inventory_System.LogManager">
+            <summary>
+            Setup and implements logs for internal logging
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.LogManager.basepath">
+            <summary>
+            Path to log file
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.LogManager.logheader">
+            <summary>
+            Header for log file name
+            </summary>
+        </member>
+        <member name="T:Sales_Inventory_System.LogManager.Categories">
+            <summary>
+            Define logging message categories
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.LogManager.#ctor(System.String,System.String)">
+            <summary>
+            Constructor, allow user to override path and name of logging file
+            </summary>
+            <param name="userbasepath"></param>
+            <param name="userlogname"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.LogManager.Log(Sales_Inventory_System.LogManager.Categories,System.String)">
+            <summary>
+            Log a message, using the provided category
+            </summary>
+            <param name="category"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.LogManager.LogInfoMsg(System.String)">
+            <summary>
+            Log an informational message
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.LogManager.LogErrorMsg(System.String)">
+            <summary>
+            Log an error message
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.LogManager.Log(System.Exception)">
+            <summary>
+            Log an exception
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="T:Sales_Inventory_System.LogWriter">
+            <summary>
+            Do the actual log writing using setup info in Log Manager class
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.LogWriter.LogFileName(System.String)">
+            <summary>
+            Create standard log file name with "our" name format
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.LogWriter.Write(System.String,Sales_Inventory_System.LogManager.Categories,System.String,System.String,System.String)">
+            <summary>
+            Write the log entry to the file. Note that the log file is always flushed and closed. This
+            will impact performance, but ensures that messages aren't lost
+            </summary>
+            <param name="from"></param>
+            <param name="category"></param>
+            <param name="msg"></param>
+            <param name="path"></param>
+            <param name="name"></param>
+        </member>
+        <member name="T:Sales_Inventory_System.DGVCellDrawingEventArgs">
+            <summary>
+            Class for the ownerdraw event. Provide the caller with the cell data, the current
+            graphics context and the location in which to draw the cell.
+            </summary>
+        </member>
+        <member name="T:Sales_Inventory_System.CellOwnerDrawEventHandler">
+            <summary>
+            Delegate for ownerdraw cells - allow the caller to provide drawing for the cell
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Sales_Inventory_System.Extensions">
+            <summary>
+            Hold Extension methods
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Extensions.DrawImbeddedImage``1(System.Collections.Generic.IEnumerable{``0},System.Drawing.Graphics,System.Int32,System.Int32,System.Drawing.Printing.Margins)">
+            <summary>
+            Extension method to print all the "ImbeddedImages" in a provided list
+            </summary>
+            <typeparam name="??"></typeparam>
+            <param name="list"></param>
+            <param name="g"></param>
+            <param name="pagewidth"></param>
+            <param name="pageheight"></param>
+            <param name="margins"></param>
+        </member>
+        <member name="T:Sales_Inventory_System.DGVPrinter">
+            <summary>
+            Data Grid View Printer. Print functions for a datagridview, since MS
+            didn't see fit to do it.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.enablelogging">
+            <summary>
+            Enable logging of of the print process. Default is to log to a file named
+            'DGVPrinter_yyyymmdd.Log' in the current directory. Since logging may have 
+            an impact on performance, it should be used for troubleshooting purposes only.
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.LogDirectory">
+            <summary>
+            Allow the user to change the logging directory. Setting this enables logging by default.
+            </summary>
+        </member>
+        <member name="E:Sales_Inventory_System.DGVPrinter.OwnerDraw">
+            <summary>
+            OwnerDraw Event declaration. Callers can subscribe to this event to override the 
+            cell drawing.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter._Owner">
+            <summary>
+            provide an override for the print preview dialog "owner" field
+            Note: Changed style for VS2005 compatibility
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter._PrintPreviewZoom">
+            <summary>
+            provide an override for the print preview zoom setting
+            Note: Changed style for VS2005 compatibility
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.PrintSettings">
+            <summary>
+            expose printer settings to allow access to calling program
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.printDialogSettings">
+            <summary>
+            expose settings for the PrintDialog displayed to the user
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.printerName">
+            <summary>
+            Set Printer Name
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.printDocument">
+            <summary>
+            Allow access to the underlying print document
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.ppvIcon">
+            <summary>
+            Allow caller to set the upper-left corner icon used
+            in the print preview dialog
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.previewdialog">
+            <summary>
+            Allow caller to set print preview dialog
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.printHeader">
+            <summary>
+            Flag to control whether or not we print the Page Header
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.HeaderHeight">
+            <summary>
+            Determine the height of the header
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.printFooter">
+            <summary>
+            Flag to control whether or not we print the Page Footer
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.printColumnHeaders">
+            <summary>
+            Flag to control whether or not we print the Column Header line
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.printRowHeaders">
+            <summary>
+            Flag to control whether or not we print the Column Header line
+            Defaults to False to match previous functionality
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.keepRowsTogether">
+            <summary>
+            Flag to control whether rows are printed whole or if partial
+            rows should be printed to fill the bottom of the page. Turn this
+            "Off" (i.e. false) to print cells/rows deeper than one page
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.keeprowstogethertolerance">
+            <summary>
+            How much of a row must show on the current page before it is 
+            split when KeepRowsTogether is set to true.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.title">
+            <summary>
+            Title for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.docName">
+            <summary>
+            Name of the document. Default is report title (can be empty)
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.titlefont">
+            <summary>
+            Font for the title. Default is Tahoma, 18pt.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.titlecolor">
+            <summary>
+            Foreground color for the title. Default is Black
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.titleformat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.TitleAlignment">
+            <summary>
+            Allow the user to override the title string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.TitleFormatFlags">
+            <summary>
+            Allow the user to override the title string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.titleprint">
+            <summary>
+            Control where in the document the title prints
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.TitleHeight">
+            <summary>
+            Return the title height based whether to print it or not
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.titlespacing">
+            <summary>
+            Mandatory spacing between the grid and the footer
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.titlebackground">
+            <summary>
+            Title Block Background Color
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.titleborder">
+            <summary>
+            Title Block Border
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitle">
+            <summary>
+            SubTitle for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitlefont">
+            <summary>
+            Font for the subtitle. Default is Tahoma, 12pt.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitlecolor">
+            <summary>
+            Foreground color for the subtitle. Default is Black
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitleformat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.SubTitleAlignment">
+            <summary>
+            Allow the user to override the subtitle string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.SubTitleFormatFlags">
+            <summary>
+            Allow the user to override the subtitle string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitleprint">
+            <summary>
+            Control where in the document the title prints
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.SubTitleHeight">
+            <summary>
+            Return the title height based whether to print it or not
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitlespacing">
+            <summary>
+            Mandatory spacing between the grid and the footer
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitlebackground">
+            <summary>
+            Title Block Background Color
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.subtitleborder">
+            <summary>
+            Title Block Border
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footer">
+            <summary>
+            footer for this report. Default is empty.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footerfont">
+            <summary>
+            Font for the footer. Default is Tahoma, 10pt.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footercolor">
+            <summary>
+            Foreground color for the footer. Default is Black
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footerformat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.FooterAlignment">
+            <summary>
+            Allow the user to override the footer string alignment. Default value is 
+            Alignment - Center; 
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.FooterFormatFlags">
+            <summary>
+            Allow the user to override the footer string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footerspacing">
+            <summary>
+            Mandatory spacing between the grid and the footer
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footerprint">
+            <summary>
+            Control where in the document the title prints
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.FooterHeight">
+            <summary>
+            Determine the height of the footer
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footerbackground">
+            <summary>
+            Title Block Background Color
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.footerborder">
+            <summary>
+            Title Block Border
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pageno">
+            <summary>
+            Include page number in the printout. Default is true.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pagenofont">
+            <summary>
+            Font for the page number, Default is Tahoma, 8pt.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pagenocolor">
+            <summary>
+            Text color (foreground) for the page number. Default is Black
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pagenumberformat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.PageNumberAlignment">
+            <summary>
+            Allow the user to override the page number string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.PageNumberFormatFlags">
+            <summary>
+            Allow the user to override the pagenumber string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pagenumberontop">
+            <summary>
+            Allow the user to select whether to have the page number at the top or bottom
+            of the page. Default is false: page numbers on the bottom of the page
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pagenumberonseparateline">
+            <summary>
+            Should the page number be printed on a separate line, or printed on the
+            same line as the header / footer? Default is false;
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.showtotalpagenumber">
+            <summary>
+            Show the total page number as n of total 
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pageseparator">
+            <summary>
+            Text separating page number and total page number. Default is ' of '.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.pagenumberprint">
+            <summary>
+            Control where in the document the title prints
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.PageNumberHeight">
+            <summary>
+            Determine the height of the footer
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.rowheadercellformat">
+            <summary>
+            Allow override of the row header cell format object
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.rowheadercelldefaulttext">
+            <summary>
+            Default value to show in the row header cell if no value is provided in the DataGridView.
+            Defaults to one tab space
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.columnheaderstyles">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.columnheadercellformat">
+            <summary>
+            Allow override of the header cell format object
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.headercellalignment">
+            <summary>
+            Deprecated - use HeaderCellFormat
+            Allow the user to override the header cell string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.headercellformatflags">
+            <summary>
+            Deprecated - use HeaderCellFormat
+            Allow the user to override the header cell string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.cellformat">
+            <summary>
+            Allow override of the cell printing format
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.cellalignment">
+            <summary>
+            Deprecated - use GetCellFormat
+            Allow the user to override the cell string alignment. Default value is 
+            Alignment - Near; 
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.cellformatflags">
+            <summary>
+            Deprecated - use GetCellFormat
+            Allow the user to override the cell string format flags. Default values
+            are: FormatFlags - NoWrap, LineLimit, NoClip
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.colwidthsoverride">
+            <summary>
+            allow the user to override the column width calcs with their own defaults
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.colstyles">
+            <summary>
+            Allow per column style overrides
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.altrowcolstyles">
+            <summary>
+            Allow per column style overrides
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.fixedcolumns">
+            <summary>
+            Allow the user to set columns that appear on every pageset. Only used when 
+            the printout is wider than one page.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.hidecolumns">
+            <summary>
+            List of columns to not display in the grid view printout.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.oldvalue">
+            <summary>
+            Insert a page break when the value in this column changes
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.PrintMargins">
+            <summary>
+            Page margins override. Default is (60, 60, 40, 40)
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.DGVPrinter.PageSettings">
+            <summary>
+            Expose the printdocument default page settings to the caller
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.porportionalcolumns">
+            <summary>
+            Spread the columns porportionally accross the page. Default is false.
+            Deprecated. Please use the ColumnWidth property
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.DGVPrinter.tablealignment">
+            <summary>
+            Center the table on the page. 
+            </summary>
+        </member>
+        <member name="T:Sales_Inventory_System.DGVPrinter.RowHeightSetting">
+            <summary>
+            Change the default row height to either the height of the string or the size of 
+            the cell. Added for image cell handling; set to CellHeight for image cells
+            </summary>
+        </member>
+        <member name="T:Sales_Inventory_System.DGVPrinter.ColumnWidthSetting">
+            <summary>
+            Change the default column width to be spread porportionally accross the page,
+            to the size of the grid cell or the size of the formatted data string.
+            Set to CellWidth for image cells.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PreviewDisplayWidth">
+            <summary>
+            calculate the print preview window width to show the entire page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PreviewDisplayHeight">
+            <summary>
+            calculate the print preview window height to show the entire page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.OnCellOwnerDraw(Sales_Inventory_System.DGVCellDrawingEventArgs)">
+            <summary>
+            Invoke any provided cell owner draw routines
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.GetStyle(System.Windows.Forms.DataGridViewRow,System.Windows.Forms.DataGridViewColumn)">
+            <summary>
+            Given a row and column, get the current grid cell style, including our local 
+            overrides
+            </summary>
+            <param name="row"></param>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.GetColumnIndex(System.String)">
+            <summary>
+            Skim the colstoprint list for a column name and return it's index
+            </summary>
+            <param name="colname">Name of column to find</param>
+            <returns>index of column</returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.#ctor">
+            <summary>
+            Constructor for DGVPrinter
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PrintDataGridView(System.Windows.Forms.DataGridView)">
+            <summary>
+            Start the printing process, print to a printer.
+            </summary>
+            <param name="dgv">The DataGridView to print</param>
+            NOTE: Any changes to this method also need to be done in PrintPreviewDataGridView
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PrintPreviewDataGridView(System.Windows.Forms.DataGridView)">
+            <summary>
+            Start the printing process, print to a print preview dialog
+            </summary>
+            <param name="dgv">The DataGridView to print</param>
+            NOTE: Any changes to this method also need to be done in PrintDataGridView
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.DisplayPrintDialog">
+            <summary>
+            Display a printdialog and return the result. Either this method or 
+            the equivalent must be done prior to calling either of the PrintNoDisplay
+            or PrintPreviewNoDisplay methods.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PrintNoDisplay(System.Windows.Forms.DataGridView)">
+            <summary>
+            Print the provided grid view. Either DisplayPrintDialog() or it's equivalent
+            setup must be completed prior to calling this routine
+            </summary>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PrintPreviewNoDisplay(System.Windows.Forms.DataGridView)">
+            <summary>
+            Preview the provided grid view. Either DisplayPrintDialog() or it's equivalent
+            setup must be completed prior to calling this routine
+            </summary>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.BeginPrintEventHandler(System.Object,System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            BeginPrint Event Handler
+            Set values at start of print run
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PrintPageEventHandler(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            PrintPage event handler. This routine prints one page. It will
+            skip non-printable pages if the user selected the "some pages" option
+            on the print dialog.
+            </summary>
+            <param name="sender">default object from windows</param>
+            <param name="e">Event info from Windows about the printing</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.SetupPrint">
+            <summary>
+            Set up the print job. Save information from print dialog
+            and print document for easy access. Also sets up the rows
+            and columns that will be printed. At this point, we're 
+            collecting all columns in colstoprint. This will be broken
+            up into pagesets later on 
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.SetupColumns">
+            <summary>
+            Set up width override and fixed columns lists
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.SetupPrintRange">
+            <summary>
+            Determine the print range based on dialog selections and user input. The rows
+            and columns are sorted to ensure that the rows appear in their correct index 
+            order and the columns appear in DisplayIndex order to account for added columns
+            and re-ordered columns.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.buildstringformat(System.Drawing.StringFormat@,System.Windows.Forms.DataGridViewCellStyle,System.Drawing.StringAlignment,System.Drawing.StringAlignment,System.Drawing.StringFormatFlags,System.Drawing.StringTrimming)">
+            <summary>
+            Centralize the string format settings. Build a string format object
+            using passed in settings, (allowing a user override of a single setting)
+            and get the alignment from the cell control style.
+            </summary>
+            <param name="format">String format, ref parameter with return settings</param>
+            <param name="controlstyle">DataGridView style to apply (if available)</param>
+            <param name="alignment">Override text Alignment</param>
+            <param name="linealignment">Override line alignment</param>
+            <param name="flags">String format flags</param>
+            <param name="trim">Override string trimming flags</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.calccellsize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCell,System.Windows.Forms.DataGridViewCellStyle,System.Single,System.Single,System.Drawing.StringFormat)">
+            <summary>
+            Calculate cell size based on data versus size settings
+            </summary>
+            <param name="g">Current graphics context</param>
+            <param name="cell">Cell being measured</param>
+            <param name="index">Column index of cell being measured</param>
+            <param name="cellstyle">Computed Style of cell being measured</param>
+            <param name="basewidth">Initial width for size calculation</param>
+            <param name="format">Computed string format for cell data</param>
+            <returns>Size of printed cell</returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.RecalcRowHeights(System.Drawing.Graphics,System.Int32,System.Single)">
+            <summary>
+            Recalculate row heights for cells whose width is greater than the set column width. 
+            Called when column widths are changed in order to flow text down the page instead of 
+            accross.
+            </summary>
+            <param name="g">Graphics Context for measuring image columns</param>
+            <param name="colindex">column index in colstoprint</param>
+            <param name="newcolwidth">new column width</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.measureprintarea(System.Drawing.Graphics)">
+            <summary>
+            Scan all the rows and columns to be printed and calculate the 
+            overall individual column width (based on largest column value), 
+            the header sizes, and determine all the row heights.
+            </summary>
+            <param name="g">The graphics context for all measurements</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.AdjustPageSets(System.Drawing.Graphics,Sales_Inventory_System.DGVPrinter.PageDef)">
+            <summary>
+            Adjust column widths for fixed and porportional columns, set the 
+            margins to enforce the selected tablealignment.
+            </summary>
+            <param name="g">The graphics context for all measurements</param>
+            <param name="pageset">The pageset to adjust</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.Pagination">
+            <summary>
+            Set page breaks for the rows to be printed, and count total pages
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.DetermineHasMorePages">
+            <summary>
+            Check for more pages. This is called at the end of printing a page set.
+            If there's another page set to print, we return true.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PrintPage(System.Drawing.Graphics)">
+            <summary>
+            This routine prints one page. It will skip non-printable pages if the user 
+            selected the "some pages" option on the print dialog. This is called during 
+            the Print event.
+            </summary>
+            <param name="g">Graphics object to print to</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.PrintPageNo(System.Drawing.Graphics,System.Single)">
+            <summary>
+            Print the page number
+            </summary>
+            <param name="g"></param>
+            <param name="printpos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.printsection(System.Drawing.Graphics,System.Single@,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.StringFormat,System.Boolean,Sales_Inventory_System.DGVPrinter.PageDef,System.Drawing.Brush,System.Drawing.Pen)">
+            <summary>
+            Print a header or footer section. Used for page numbers and titles
+            </summary>
+            <param name="g">Graphic context to print in</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="text">String to print</param>
+            <param name="font">Font to use for printing</param>
+            <param name="color">Color to print in</param>
+            <param name="format">String format for text</param>
+            <param name="useroverride">True if the user overrode the alignment or flags</param>
+            <param name="margins">The table's print margins</param>
+            <param name="background">Background fill for the section; may be null for no background</param>
+            <param name="border">Border for the section; may be null for no border</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.printfooter(System.Drawing.Graphics,System.Single@,Sales_Inventory_System.DGVPrinter.PageDef)">
+            <summary>
+            Print the footer. This handles the footer spacing, and printing the page number
+            at the bottom of the page (if the page number is not in the header).
+            </summary>
+            <param name="g">Graphic context to print in</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="margins">The table's print margins</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.printcolumnheaders(System.Drawing.Graphics,System.Single@,Sales_Inventory_System.DGVPrinter.PageDef)">
+            <summary>
+            Print the column headers. Most printing format info is retrieved from the 
+            source DataGridView.
+            </summary>
+            <param name="g">Graphics Context to print within</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="pageset">Current pageset - defines columns and margins</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.printrow(System.Drawing.Graphics,System.Single,System.Windows.Forms.DataGridViewRow,Sales_Inventory_System.DGVPrinter.PageDef,System.Single)">
+            <summary>
+            Print one row of the DataGridView. Most printing format info is retrieved
+            from the DataGridView.
+            </summary>
+            <param name="g">Graphics Context to print within</param>
+            <param name="pos">Track vertical space used; 'y' location</param>
+            <param name="row">The row that will be printed</param>
+            <param name="pageset">Current Pageset - defines columns and margins</param>
+            <param name="startline">Line no. in row to start printing text at</param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.DrawOwnerDrawCell(System.Drawing.Graphics,System.Int32,System.Int32,System.Drawing.RectangleF,System.Windows.Forms.DataGridViewCellStyle)">
+            <summary>
+            Allow override of cell drawing. This is to support grids that have onPaint
+            overridden to do things like images in header rows and vertical printing
+            </summary>
+            <param name="g"></param>
+            <param name="rowindex"></param>
+            <param name="columnindex"></param>
+            <param name="rectf"></param>
+            <param name="style"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.DrawCell(System.Drawing.Graphics,System.Drawing.RectangleF,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewCell,System.Single,System.Drawing.StringFormat,System.Drawing.Pen)">
+            <summary>
+            Draw a cell. Used for column and row headers and body cells.
+            </summary>
+            <param name="g"></param>
+            <param name="cellprintarea"></param>
+            <param name="style"></param>
+            <param name="cell"></param>
+            <param name="startlocation"></param>
+            <param name="cellformat"></param>
+            <param name="lines"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.DrawCheckBoxCell(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCheckBoxCell,System.Drawing.RectangleF)">
+            <summary>
+            Draw a body cell that is a checkbox
+            </summary>
+            <param name="g"></param>
+            <param name="checkboxcell"></param>
+            <param name="rectf"></param>
+        </member>
+        <member name="M:Sales_Inventory_System.DGVPrinter.DrawImageCell(System.Drawing.Graphics,System.Windows.Forms.DataGridViewImageCell,System.Drawing.RectangleF)">
+            <summary>
+            Draw a body cell that has an imbedded image
+            </summary>
+            <param name="g"></param>
+            <param name="imagecell"></param>
+            <param name="rectf"></param>
+        </member>
+        <member name="F:Sales_Inventory_System.Employee_Record.Employee_StockIn.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Record.Employee_StockIn.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Record.Employee_StockIn.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Employee_Record.Employee_StockOut.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Record.Employee_StockOut.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Record.Employee_StockOut.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Employee_SellProduct.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_SellProduct.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_SellProduct.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Employee_Stock_In.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Stock_In.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Stock_In.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Employee_Transaction.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Transaction.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Employee_Transaction.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.other_form.Account_Create.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Account_Create.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Account_Create.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.other_form.Account_Trashbin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Account_Trashbin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Account_Trashbin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.other_form.Account_Update.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Account_Update.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Account_Update.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.other_form.Inventory_Create.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Inventory_Create.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Inventory_Create.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.other_form.Inventory_Trashbin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Inventory_Trashbin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Inventory_Trashbin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.other_form.Inventory_Update.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Inventory_Update.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.other_form.Inventory_Update.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.Form_Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Form_Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.Form_Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.SalesFolder.Customize_Sale.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Customize_Sale.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Customize_Sale.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.SalesFolder.Daily_Sale.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Daily_Sale.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Daily_Sale.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.SalesFolder.Income_Selection.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Income_Selection.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Income_Selection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.SalesFolder.Monthly_Sale.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Monthly_Sale.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Monthly_Sale.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.SalesFolder.Sales_Export.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Sales_Export.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Sales_Export.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.SalesFolder.Weekly_Sale.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Weekly_Sale.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.SalesFolder.Weekly_Sale.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.TransactionFolder.StockInProduct_Insert.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockInProduct_Insert.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockInProduct_Insert.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.TransactionFolder.stockinProduct_Update.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.stockinProduct_Update.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.stockinProduct_Update.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.TransactionFolder.stockinRecord_Update.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.stockinRecord_Update.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.stockinRecord_Update.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.TransactionFolder.StockIn_Insert.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockIn_Insert.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockIn_Insert.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.TransactionFolder.StockIn_Product.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockIn_Product.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockIn_Product.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.TransactionFolder.StockIn_Record.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockIn_Record.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockIn_Record.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Sales_Inventory_System.TransactionFolder.StockOut_Record.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockOut_Record.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Sales_Inventory_System.TransactionFolder.StockOut_Record.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Sales_Inventory_System.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Sales_Inventory_System.Properties.Resources.Logo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+    </members>
+</doc>

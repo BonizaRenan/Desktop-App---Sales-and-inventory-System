@@ -1,0 +1,130 @@
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.AssemblyReference.cache
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.SuggestedBindingRedirects.cache
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Dashboard_Admin.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Dashboard_Staff.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Form_Login.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Properties.Resources.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.GenerateResource.cache
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.CoreCompileInputs.cache
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.exe
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.pdb
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Sales_Inventory_System.exe.config
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Sales_Inventory_System.exe
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Sales_Inventory_System.pdb
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Google.Protobuf.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\MySql.Data.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Buffers.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Memory.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\ZstdNet.dll
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Google.Protobuf.pdb
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Google.Protobuf.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\MySql.Data.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Buffers.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Memory.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.CopyComplete
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Account.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Account_Create.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Account_Trashbin.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Inventory.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Inventory_Create.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Inventory_Trashbin.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Stock_In.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_SellProduct.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Transaction.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Dashboard.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Sales.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Customize_Sale.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Sales_Export.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Daily_Sale.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Weekly_Sale.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Monthly_Sale.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Transaction.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockIn_Record.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockIn_Insert.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockIn_Product.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockInProduct_Insert.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockOut_Record.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Income_Selection.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Account_Update.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Inventory_Update.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.stockinRecord_Update.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.stockinProduct_Update.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Record.Employee_StockOut.resources
+C:\Users\Owner\source\repos\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Record.Employee_StockIn.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Sales_Inventory_System.exe.config
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Sales_Inventory_System.exe
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Sales_Inventory_System.pdb
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Google.Protobuf.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\MySql.Data.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Buffers.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Memory.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\ZstdNet.dll
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Google.Protobuf.pdb
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\Google.Protobuf.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\MySql.Data.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Buffers.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Memory.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.AssemblyReference.cache
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.SuggestedBindingRedirects.cache
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Account.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Dashboard.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Inventory.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Sales.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Admin_Transaction.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Dashboard_Admin.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Dashboard_Staff.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Record.Employee_StockIn.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Record.Employee_StockOut.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_SellProduct.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Stock_In.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Employee_Transaction.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Account_Create.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Form_Login.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Account_Trashbin.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Account_Update.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Inventory_Create.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Inventory_Trashbin.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.other_form.Inventory_Update.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.Properties.Resources.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Customize_Sale.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Daily_Sale.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Income_Selection.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Monthly_Sale.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Sales_Export.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.SalesFolder.Weekly_Sale.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockInProduct_Insert.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.stockinProduct_Update.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.stockinRecord_Update.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockIn_Insert.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockIn_Product.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockIn_Record.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.TransactionFolder.StockOut_Record.resources
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.GenerateResource.cache
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.CoreCompileInputs.cache
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\BabyThesis.csproj.CopyComplete
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.exe
+C:\Users\Daisy\Desktop\System Folder\Finalize System\Sales_Inventory_System\Sales_Inventory_System\obj\Debug\Sales_Inventory_System.pdb

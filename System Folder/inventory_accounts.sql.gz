@@ -1,0 +1,89 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 06, 2023 at 07:59 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `inventory_accounts`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `logins`
+--
+
+CREATE TABLE `logins` (
+  `Id_No` int(11) NOT NULL,
+  `Firstname` varchar(100) NOT NULL,
+  `Lastname` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `LogIn_Type` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `logins`
+--
+
+INSERT INTO `logins` (`Id_No`, `Firstname`, `Lastname`, `username`, `password`, `LogIn_Type`) VALUES
+(12, 'April Rose', 'Boniza', 'Admin1', 'Admin1', 'Admin'),
+(17, 'Jerick', 'Ching', 'Staff2', 'Staff2', 'Staff'),
+(19, 'Daisy', 'Janoras', 'Admin3', 'Admin3', 'Admin'),
+(21, 'Diana', 'Panti', 'Staff3', 'Staff3', 'Staff'),
+(22, 'Jancen', 'asd', 'Staff4', 'Staff4', 'Staff'),
+(23, 'Jayvee', 'Empleo', 'Admin2', 'Admin2', 'Admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trashbin_logins`
+--
+
+CREATE TABLE `trashbin_logins` (
+  `Id_No` int(11) NOT NULL,
+  `Firstname` varchar(100) NOT NULL,
+  `Lastname` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `Login_Type` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `logins`
+--
+ALTER TABLE `logins`
+  ADD PRIMARY KEY (`Id_No`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `logins`
+--
+ALTER TABLE `logins`
+  MODIFY `Id_No` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

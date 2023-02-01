@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabyThesis", "Sales_Inventory_System\BabyThesis.csproj", "{CC1B5D88-3B5D-4436-878D-67E076F9CA11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC1B5D88-3B5D-4436-878D-67E076F9CA11}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1B5D88-3B5D-4436-878D-67E076F9CA11}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{CC1B5D88-3B5D-4436-878D-67E076F9CA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1B5D88-3B5D-4436-878D-67E076F9CA11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53815801-2F98-4D65-8726-3D9EC5041A2B}
+	EndGlobalSection
+EndGlobal

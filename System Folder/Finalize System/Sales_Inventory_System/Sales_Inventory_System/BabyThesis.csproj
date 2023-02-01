@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC1B5D88-3B5D-4436-878D-67E076F9CA11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sales_Inventory_System</RootNamespace>
+    <AssemblyName>Sales_Inventory_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Daisy\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Sales_Inventory_System.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1D3D6FE027DBF1F05C67F4FCB5B3B6F1F519D7AD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BabyThesis_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Account.Designer.cs">
+      <DependentUpon>Admin_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboard.Designer.cs">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Inventory.Designer.cs">
+      <DependentUpon>Admin_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Sales.Designer.cs">
+      <DependentUpon>Admin_Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Transaction.Designer.cs">
+      <DependentUpon>Admin_Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Admin.Designer.cs">
+      <DependentUpon>Dashboard_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Staff.Designer.cs">
+      <DependentUpon>Dashboard_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Employee_Record\Employee_StockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Record\Employee_StockIn.Designer.cs">
+      <DependentUpon>Employee_StockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Record\Employee_StockOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Record\Employee_StockOut.Designer.cs">
+      <DependentUpon>Employee_StockOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_SellProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_SellProduct.Designer.cs">
+      <DependentUpon>Employee_SellProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Stock-In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Stock-In.Designer.cs">
+      <DependentUpon>Employee_Stock-In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Transaction.Designer.cs">
+      <DependentUpon>Employee_Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other_form\Account_Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_form\Account_Create.Designer.cs">
+      <DependentUpon>Account_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other_form\Account_Trashbin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_form\Account_Trashbin.Designer.cs">
+      <DependentUpon>Account_Trashbin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other_form\Account_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_form\Account_Update.Designer.cs">
+      <DependentUpon>Account_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other_form\Inventory_Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_form\Inventory_Create.Designer.cs">
+      <DependentUpon>Inventory_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other_form\Inventory_Trashbin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_form\Inventory_Trashbin.Designer.cs">
+      <DependentUpon>Inventory_Trashbin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other_form\Inventory_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_form\Inventory_Update.Designer.cs">
+      <DependentUpon>Inventory_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesFolder\Customize_Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Customize_Sale.Designer.cs">
+      <DependentUpon>Customize_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Daily_Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Daily_Sale.Designer.cs">
+      <DependentUpon>Daily_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Income_Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Income_Selection.Designer.cs">
+      <DependentUpon>Income_Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Monthly_Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Monthly_Sale.Designer.cs">
+      <DependentUpon>Monthly_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Sales_Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Sales_Export.Designer.cs">
+      <DependentUpon>Sales_Export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Weekly_Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Weekly_Sale.Designer.cs">
+      <DependentUpon>Weekly_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRecord.cs" />
+    <Compile Include="TransactionFolder\StockInProduct_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFolder\StockInProduct_Insert.Designer.cs">
+      <DependentUpon>StockInProduct_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFolder\stockinProduct_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFolder\stockinProduct_Update.Designer.cs">
+      <DependentUpon>stockinProduct_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFolder\stockinRecord_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFolder\stockinRecord_Update.Designer.cs">
+      <DependentUpon>stockinRecord_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFolder\StockIn_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFolder\StockIn_Insert.Designer.cs">
+      <DependentUpon>StockIn_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFolder\StockIn_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFolder\StockIn_Product.Designer.cs">
+      <DependentUpon>StockIn_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFolder\StockIn_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFolder\StockIn_Record.Designer.cs">
+      <DependentUpon>StockIn_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionFolder\StockOut_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionFolder\StockOut_Record.Designer.cs">
+      <DependentUpon>StockOut_Record.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Account.resx">
+      <DependentUpon>Admin_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Dashboard.resx">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Inventory.resx">
+      <DependentUpon>Admin_Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Sales.resx">
+      <DependentUpon>Admin_Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Transaction.resx">
+      <DependentUpon>Admin_Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Admin.resx">
+      <DependentUpon>Dashboard_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Staff.resx">
+      <DependentUpon>Dashboard_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Record\Employee_StockIn.resx">
+      <DependentUpon>Employee_StockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Record\Employee_StockOut.resx">
+      <DependentUpon>Employee_StockOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_SellProduct.resx">
+      <DependentUpon>Employee_SellProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Stock-In.resx">
+      <DependentUpon>Employee_Stock-In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Transaction.resx">
+      <DependentUpon>Employee_Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_form\Account_Create.resx">
+      <DependentUpon>Account_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_form\Account_Trashbin.resx">
+      <DependentUpon>Account_Trashbin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_form\Account_Update.resx">
+      <DependentUpon>Account_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_form\Inventory_Create.resx">
+      <DependentUpon>Inventory_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_form\Inventory_Trashbin.resx">
+      <DependentUpon>Inventory_Trashbin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_form\Inventory_Update.resx">
+      <DependentUpon>Inventory_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SalesFolder\Customize_Sale.resx">
+      <DependentUpon>Customize_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Daily_Sale.resx">
+      <DependentUpon>Daily_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Income_Selection.resx">
+      <DependentUpon>Income_Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Monthly_Sale.resx">
+      <DependentUpon>Monthly_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Sales_Export.resx">
+      <DependentUpon>Sales_Export.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Weekly_Sale.resx">
+      <DependentUpon>Weekly_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFolder\StockInProduct_Insert.resx">
+      <DependentUpon>StockInProduct_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFolder\stockinProduct_Update.resx">
+      <DependentUpon>stockinProduct_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFolder\stockinRecord_Update.resx">
+      <DependentUpon>stockinRecord_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFolder\StockIn_Insert.resx">
+      <DependentUpon>StockIn_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFolder\StockIn_Product.resx">
+      <DependentUpon>StockIn_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFolder\StockIn_Record.resx">
+      <DependentUpon>StockIn_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionFolder\StockOut_Record.resx">
+      <DependentUpon>StockOut_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BabyThesis_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+    <Content Include="Logo.ico" />
+    <None Include="Resources\Logo.ico" />
+    <Content Include="‭icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
